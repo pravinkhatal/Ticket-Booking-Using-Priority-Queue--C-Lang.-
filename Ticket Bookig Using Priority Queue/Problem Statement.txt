@@ -1,0 +1,21 @@
+An airline company uses the formula shown below to determine the priority of passengers on the waiting list for overbooked flights.
+Priority number = A / 1000 + B – C
+where A is the customer’s total mileage in the past year
+B is the number of years in his or her frequent flier program
+C is a sequence number representing the customer’s arrival position when he/she booked the flight
+Given a file of overbooked customers as shown below:
+
+Name Mileage Years Sequence
+Avinash Kale 53000 5 1
+Archana Patil 89000 3 2
+Bipin Mishra 93000 3 3
+Sara Farnandes 18000 1 4
+Manisha Joshi 76000 7 5
+John Brown 65000 2 6
+Sakshi Mehta 37000 3 7
+Krishna Gandhi 21000 6 8
+Deepa Avasthi 43000 4 9
+Esha Chopra 63000 3 10
+
+Write a program that reads the file and determines each customer’s priority number.
+ The program then builds a priority queue using the priority number and prints a list of waiting customers in priority sequence.

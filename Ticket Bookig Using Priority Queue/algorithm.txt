@@ -1,0 +1,71 @@
+Algorithm enqueue (front, rear, n,sn,milge,yer,seq,pri) 
+Inserts data into a priority queue
+
+	allocate (new node)
+	move n to new node name
+	move sn to new node sname
+	move milge to new node mileage
+	move yer to new node year
+	move seq to new node sequence
+	move pri to new node priority
+	if (empty queue)
+	//Inserting into null queue
+		set queue front to address of new node
+		set queue rear to address of new node
+	elseif(new node priority > front node priority)
+	 //Inserting node at front
+		 set next of new node to queue front
+		 set queue front to address of new node
+	elseif(new node priority < rear node priority)
+	 //Inserting node at rear
+		 set next of rear node to address of new node
+		 set queue rear to address of new node
+
+	else
+		set q to queue front
+		loop(new node priority<=q ->next->priority)
+			set q to q next
+		end loop
+		set new node next to q next
+		set q next to address of new node
+	End if
+End enqueue
+-------------------------------------------------------------
+Algorithm dequeue (front, rear, dataOut) 
+
+Deletes a node from a queue
+
+	if (queue empty)
+		print queue empty
+	end if
+	move front data to dataOut
+	if (only one node in queue)
+	Deleting only element in queue
+		set queue front to null
+		set queue rear to null
+	else
+		set queue front to queue front next
+	end if
+
+End dequeue
+-------------------------------------------------------------
+Algorithm prj_demo() 
+
+	
+	open designated file using file pointer
+	set file pointer  to beginning of file
+	loop(not end of file)
+	// Read data 
+		 read name,mileage,sequence,year from file
+		 set priority to (mileage/1000)+year-sequence
+		 enqueue(name,mieage,year,sequence,priority)
+	end loop
+	display record according to priority
+
+End prj_demo
+------------------------------------------------------------
+
+	
+
+
+	

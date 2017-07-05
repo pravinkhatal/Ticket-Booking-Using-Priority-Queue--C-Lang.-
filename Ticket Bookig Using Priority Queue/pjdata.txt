@@ -1,0 +1,10 @@
+Avinash Kale 	53000 5 1
+Archana Patil 	89000 3 2
+Bipin Mishra 	93000 3 3
+Sara Farnandes 	18000 1 4
+Manisha Joshi 	76000 7 5
+John Brown 	65000 2 6
+Sakshi Mehta 	37000 3 7
+Krishna Gandhi 	21000 6 8
+Deepa Avasthi 	43000 4 9
+Esha Chopra 	63000 3 10
